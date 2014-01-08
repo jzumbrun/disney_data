@@ -263,7 +263,7 @@ if (!class_exists('DisneyData')) {
 
 			$this->cache_name = $this->park . '_'. $this->service;
 			if(!is_null($this->site)){
-				$this->cache_name .= '_' . $this->site;
+				$this->cache_name .= '_' . $this->site . '.cache';
 			}
 
 			return $this->cache_name;
