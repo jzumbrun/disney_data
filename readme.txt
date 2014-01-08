@@ -20,8 +20,10 @@ Use the shortcode "disney_data" with the parameter "park", "service", and "site"
 1. Download and unzip the plugin into your WordPress plugins directory (usually `/wp-content/plugins/`).
 2. Activate the plugin through the 'Plugins' menu in your WordPress Admin.
 
-A page will be created for every data 'endpoint' provided by touringplans.com.
-For example a Page Titled "Magic Kingdom Dining Aloha Isle" with data from http://touringplans.com/magic-kingdom/dining/aloha-isle.json will be created.
+A page will be created for every data park and service by touringplans.com.
+For example a Page Titled "Magic Kingdom Dining" with data from http://touringplans.com/magic-kingdom/dining.json will be created.
+
+Once a list page is visited the site pages will be created. Whenever a new site is listed in the service it's page will be created.
 
 Once these pages exist, or if they already exist they will not be removed or override your custom changes, thus updates to this plugin will not remove data you have entered above or below the shortcode.
 
@@ -39,8 +41,8 @@ Use the shorcode disney_data with "park", "service", and "site" parameter based 
 
 Required:
 	park - This is the park name: magic-kindom, epcot, animal-kingdom, hollywood-studios 
-	service - This the service type: attractions, dining, resort-dining, hotels
 Options:
+	service - This the service type: attractions, dining, resort-dining, hotels
 	site - This is the site name: haunted-mansion, disneys-grand-floridian-resort
 		Note: the site must be apart of the correct service and park
 	add - This allows adding or overiding of data, if the data already exists
